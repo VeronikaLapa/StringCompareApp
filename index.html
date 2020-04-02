@@ -7,17 +7,36 @@
   </head>
   <body>
     <div class="content">
-      <form class="inputs" name="string-form" onsubmit="onSubmit();    return false;">
-        <div class="input">
-          <label for="first-string" class="input__label">Первая строка</label>
-          <input type="text" id="first-string" class="input__field" required />
-        </div>
-        <div class="input">
-          <label for="second-string" class="input__label">Вторая строка</label>
-          <input type="text" id="second-string" class="input__field" required />
-        </div>
-        <input type="submit" />
-      </form>
+      <div class="content__form border_box">
+        <div class="form-header">Введите две строки</div>
+        <form
+          class="inputs"
+          name="string-form"
+          onsubmit="onSubmit();    return false;"
+        >
+          <div class="input">
+            <label for="first-string" class="input__label">Первая строка</label>
+            <input
+              type="text"
+              id="first-string"
+              class="input__field border_box"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="second-string" class="input__label"
+              >Вторая строка</label
+            >
+            <input
+              type="text"
+              id="second-string"
+              class="input__field border_box"
+              required
+            />
+          </div>
+          <input type="submit" class="submit-button form__button"/>
+        </form>
+      </div>
       <div class="result">
         <div class="difference">
           <h2>Разность строк</h2>
