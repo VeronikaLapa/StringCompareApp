@@ -1,7 +1,6 @@
 .content__form {
   width: 50%;
   margin: auto;
-  padding: 20px;
 }
 
 .border_box {
@@ -13,12 +12,13 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 
+  padding: 20px;
 }
 
 .inputs {
   padding: 15px;
 }
-.form-header{
+.header{
   font-weight: bold;
   font-style: italic;
   border-bottom: 2px solid #ddd;
@@ -37,6 +37,7 @@
   flex-direction: column;
   justify-content: space-around;
   font: 13px Arial, Helvetica, sans-serif;
+  min-width: 370px;
 }
 .input__label {
   display: inline-block;
@@ -78,14 +79,38 @@
 .string-result {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
+
 
   font-size: 30px;
   font-weight: bold;
 }
+.letter-box {
+  margin-bottom: 10px;
+}
 .letter {
+  font: 20px Consolas, monospace, serif;
   width: 15px;
   margin: 0 5px;
+  color: #ff4136;
 }
 .same-letter {
   color: #04a804;
 }
+
+.result {
+  margin-top: 20px;
+  max-width: 90vw;
+}
+
+.difference {
+  margin-bottom: 10px;
+}
+
+.difference__value {
+  font-weight: bold;
+  font-size: 23px;
+  font-style: italic;
+}
+

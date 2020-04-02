@@ -8,7 +8,7 @@
   <body>
     <div class="content">
       <div class="content__form border_box">
-        <div class="form-header">Введите две строки</div>
+        <div class="header">Введите две строки</div>
         <form
           class="inputs"
           name="string-form"
@@ -37,13 +37,16 @@
           <input type="submit" class="submit-button form__button"/>
         </form>
       </div>
-      <div class="result">
+      <div class="result border_box">
         <div class="difference">
-          <h2>Разность строк</h2>
+          <div class="header">Разность строк:</div>
           <div class="difference__value">0</div>
         </div>
-        <div class="string-result" id="first-result"></div>
-        <div class="string-result" id="second-result"></div>
+        <div class="compare">
+          <div class="header">Сравнение:</div>
+          <div class="string-result"></div>
+        </div>
+
       </div>
     </div>
     <script src="src/solver.js"></script>
