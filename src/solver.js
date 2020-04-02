@@ -1,5 +1,5 @@
 function buildDpArray(s1, s2) {
-  let dp = [...Array(s1.length + 1)].map(x => Array(s2.length + 1).fill(Infinity));
+  const dp = [...Array(s1.length + 1)].map(() => Array(s2.length + 1).fill(Infinity));
 
   function dpFunction(x, y) {
     if (x === 0) {
@@ -8,6 +8,7 @@ function buildDpArray(s1, s2) {
     if (y === 0) {
       return x;
     }
+
     return Math.min(
       dp[x][y - 1] + 1,
       dp[x - 1][y] + 1,
@@ -21,14 +22,15 @@ function buildDpArray(s1, s2) {
       dp[i][j] = dpFunction(i, j);
     }
   }
+
   return dp;
 }
 function compareTwoStrings(s1, s2) {
-  let array = buildDpArray(s1, s2);
+  const array = buildDpArray(s1, s2);
   const dif = array[s1.length][s2.length];
-  let s1Result = [],
-    s2Result = [];
-  let crtPosition = { x: s1.length, y: s2.length };
+  const s1Result = [];
+  const s2Result = [];
+  const crtPosition = { x: s1.length, y: s2.length };
   while (crtPosition.x > 0 || crtPosition.y > 0) {
     if (
       crtPosition.x === 0 ||
@@ -53,6 +55,7 @@ function compareTwoStrings(s1, s2) {
     s1Result.unshift(s1.charAt(crtPosition.x));
     s2Result.unshift(s2.charAt(crtPosition.y));
   }
+
   return {
     dif,
     s1Result,
