@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My apps</title>
-</head>
-<body>
-
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Разность строк</title>
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <form class="inputs" name="string-form" onsubmit="onSubmit();    return false;">
+        <div class="input">
+          <label for="first-string" class="input__label">Первая строка</label>
+          <input type="text" id="first-string" class="input__field" required />
+        </div>
+        <div class="input">
+          <label for="second-string" class="input__label">Вторая строка</label>
+          <input type="text" id="second-string" class="input__field" required />
+        </div>
+        <input type="submit" />
+      </form>
+      <div class="result">
+        <div class="difference">
+          <h2>Разность строк</h2>
+          <div class="difference__value">0</div>
+        </div>
+        <div class="string-result" id="first-result"></div>
+        <div class="string-result" id="second-result"></div>
+      </div>
+    </div>
+    <script src="src/solver.js"></script>
+    <script src="src/index.js"></script>
+  </body>
 </html>
