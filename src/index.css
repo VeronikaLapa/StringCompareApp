@@ -4,30 +4,30 @@
 }
 
 .border_box {
-  border: 1px solid #C2C2C2;
-  box-shadow: 1px 1px 4px #EBEBEB;
-  -moz-box-shadow: 1px 1px 4px #EBEBEB;
-  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
-  border-radius: 3px;
+  padding: 20px;
+
+  border: 1px solid #c2c2c2;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  border-radius: 3px;
 
-  padding: 20px;
+  -moz-box-shadow: 1px 1px 4px #ebebeb;
+  -webkit-box-shadow: 1px 1px 4px #ebebeb;
+  box-shadow: 1px 1px 4px #ebebeb;
 }
 
 .inputs {
   padding: 15px;
 }
-.header{
-  font-weight: bold;
-  font-style: italic;
-  border-bottom: 2px solid #ddd;
-  font-size: 15px;
-  padding-bottom: 3px;
+.header {
   margin-bottom: 10px;
-}
-.result {
-  margin: auto;
+  padding-bottom: 3px;
+
+  border-bottom: 2px solid #ddd;
+
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
 }
 .input {
   margin: 10px 0;
@@ -36,52 +36,59 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font: 13px Arial, Helvetica, sans-serif;
+
   min-width: 370px;
+
+  font: 13px Arial, Helvetica, sans-serif;
 }
 .input__label {
   display: inline-block;
-  font-size: 15px;
-  font-weight: bold;
 
   width: 35%;
+
+  font-size: 15px;
+  font-weight: bold;
 }
 .input__field {
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 7px;
-  outline: none;
+  box-sizing: border-box;
 
-  width: 60%
+  width: 60%;
+  padding: 7px;
+
+  outline: none;
 }
 
-.inputs input[type=submit]{
-  border: none;
+.inputs input[type='submit'] {
   padding: 8px 15px 8px 15px;
-  background: #FF8500;
-  color: #FFF;
-  box-shadow: 1px 1px 4px #DADADA;
-  -moz-box-shadow: 1px 1px 4px #DADADA;
-  -webkit-box-shadow: 1px 1px 4px #DADADA;
-  border-radius: 3px;
+
+  border: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  background: #ff8500;
+  -moz-box-shadow: 1px 1px 4px #dadada;
+  -webkit-box-shadow: 1px 1px 4px #dadada;
+  box-shadow: 1px 1px 4px #dadada;
+  color: #fff;
 }
 
 .input__field:focus {
-  border: 1px solid #0C0;
+  border: 1px solid #0c0;
 }
 .form__button {
-  margin-top: 15px;
   float: right;
+
+  margin-top: 15px;
 }
 .string-result {
   display: flex;
-  flex-direction: row;
-  width: 100%;
   overflow-x: auto;
+  flex-direction: row;
 
+  width: 100%;
 
   font-size: 30px;
   font-weight: bold;
@@ -90,18 +97,19 @@
   margin-bottom: 10px;
 }
 .letter {
-  font: 20px Consolas, monospace, serif;
   width: 15px;
   margin: 0 5px;
+
   color: #ff4136;
+  font: 20px Consolas, monospace, serif;
 }
 .same-letter {
   color: #04a804;
 }
 
 .result {
-  margin-top: 20px;
   max-width: 90vw;
+  margin: auto;
 }
 
 .difference {
@@ -109,8 +117,7 @@
 }
 
 .difference__value {
-  font-weight: bold;
   font-size: 23px;
   font-style: italic;
+  font-weight: bold;
 }
-

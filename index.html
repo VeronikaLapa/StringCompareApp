@@ -9,32 +9,16 @@
     <div class="content">
       <div class="content__form border_box">
         <div class="header">Введите две строки</div>
-        <form
-          class="inputs"
-          name="string-form"
-          onsubmit="onSubmit();    return false;"
-        >
+        <form class="inputs" name="string-form" onsubmit="onSubmit();    return false;">
           <div class="input">
             <label for="first-string" class="input__label">Первая строка</label>
-            <input
-              type="text"
-              id="first-string"
-              class="input__field border_box"
-              required
-            />
+            <input type="text" id="first-string" class="input__field border_box" required />
           </div>
           <div class="input">
-            <label for="second-string" class="input__label"
-              >Вторая строка</label
-            >
-            <input
-              type="text"
-              id="second-string"
-              class="input__field border_box"
-              required
-            />
+            <label for="second-string" class="input__label">Вторая строка</label>
+            <input type="text" id="second-string" class="input__field border_box" required />
           </div>
-          <input type="submit" class="submit-button form__button"/>
+          <input type="submit" class="submit-button form__button" />
         </form>
       </div>
       <div class="result border_box">
@@ -46,7 +30,6 @@
           <div class="header">Сравнение:</div>
           <div class="string-result"></div>
         </div>
-
       </div>
     </div>
     <script src="src/solver.js"></script>
