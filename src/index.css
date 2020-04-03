@@ -45,6 +45,7 @@
   display: inline-block;
 
   width: 35%;
+  min-width: 115px;
 
   font-size: 15px;
   font-weight: bold;
@@ -120,4 +121,10 @@
   font-size: 23px;
   font-style: italic;
   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .content__form {
+    width: 90%;
+  }
 }
